@@ -1,0 +1,34 @@
+@import "bootstrap";
+
+.navbar
+{
+background-color: black !important;
+}
+
+.nav-link
+{
+    color: white !important;
+}
+
+#logo
+{
+    color: skyblue !important;
+    font-size: xx-large !important;
+    letter-spacing: 0.5ch ;
+}
+.jumbotron
+{
+   
+    background-image: asset-url('jumboimg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+  }
+   
+
+#sticky-footer {
+    margin-top: 25px;    
+        flex-shrink: none;
+      }
+    

@@ -1,0 +1,22 @@
+
+<%= @el.each do |ele| %>
+    <div class="container text-center mt-4">
+    <div class="card text-center">
+  <div class="card-header">
+   Element ID:<%= ele.id %>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">TITLE:</br><%= ele.title%></h5>
+    <p class="card-text">DETAILS:<%= ele.details %></p>
+    <%= link_to "View", element_path(ele), class: "btn btn-outline-success" %>
+    <%= link_to "Edit", edit_element_path(ele), class: "btn btn-outline-info" %>
+    <%= link_to "Delete", element_path(ele), class: "btn btn-outline-danger",data: { "turbo-method": :delete, "turbo_confirm": 'Are you sure?' }%>
+    </div>
+  <div class="card-footer text-muted">
+  created at:<%= ele.created_at %></br>
+  updated_at:<%= ele.updated_at %></br>
+  </div>
+</div>    
+</div>    
+    <% end %>
+
